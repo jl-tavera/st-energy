@@ -79,3 +79,6 @@ st.map(map_df,
     color='color',
     zoom = 1)
 
+st.write("By locating the nearest metereological stations to the energy plants, we can analyze the correlation between the energy consumption and the weather conditions. We take this data from the meteostat library, and create a weighted average of all the climate conditions available. The data per station looks like this ")
+hourly_df = pd.read_csv('data/hourly_data_test.csv')
+st.dataframe(hourly_df.head())
